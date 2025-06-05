@@ -36,7 +36,8 @@ jobs:
         chmod +x setup.sh
         ./setup.sh
         ls -la
-      - name: Build Docker image
+
+    - name: Build Docker image
       run: docker build -t ytm-downloader .
       
     - name: Test Docker image
