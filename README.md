@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue)](https://www.docker.com/)
+[![.github/workflows/docker-build.yml](https://github.com/A909M/youtube-music-playlist-downloader/actions/workflows/docker-build.yml/badge.svg)](https://github.com/A909M/youtube-music-playlist-downloader/actions/workflows/docker-build.yml)
 
 A Docker-based tool to download playlists from YouTube Music and convert them to MP3 format.
 
