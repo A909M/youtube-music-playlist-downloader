@@ -1,0 +1,33 @@
+# YouTube Music Downloader Configuration File
+# Copy this file to config.yml and modify as needed
+
+# Output directory for downloaded files
+output_dir: /downloads
+
+# MP3 audio quality (e.g., 128k, 192k, 320k)
+quality: 320k
+
+# Enable rate limiting to avoid IP blocking (0=disabled, 1=enabled)
+rate_limit: 0
+
+# Maximum number of retries for failed downloads
+max_retries: 3
+
+# Log file path (leave empty for console-only logging)
+log_file: /logs/ytm-downloader.log
+
+# Verbose logging (0=normal, 1=verbose)
+verbose: 0
+
+# Proxy URL (leave empty to disable)
+# Format: protocol://user:pass@host:port
+# Example: http://user:pass@10.10.1.10:3128
+proxy: ""
+
+# User agent to use for requests (leave empty for default)
+user_agent: ""
+
+# Add custom HTTP headers (leave empty for default)
+http_headers:
+  # Referer: "https://music.youtube.com/"
+  # Origin: "https://music.youtube.com"

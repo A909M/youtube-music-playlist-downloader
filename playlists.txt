@@ -1,0 +1,13 @@
+# YouTube Music Playlists - Add your playlist URLs below (one per line)
+# Lines starting with # are ignored
+
+# Example:
+# https://music.youtube.com/playlist?list=PLXXXXXXXXXXXXXX
+# https://www.youtube.com/playlist?list=PLXXXXXXXXXXXXXX
+
+https://music.youtube.com/playlist?list=PLQ176FUIyIUZ5sDV_Yb_lWWHU9mmdb5xs&si=RhLbfMcbdCOO9f8V
+https://music.youtube.com/playlist?list=PLQ176FUIyIUaNcDQJjIFL0wp8GW2EA9Xh&si=4Pz0f5Wr4SBOL4X1
+
+https://music.youtube.com/playlist?list=PLQ176FUIyIUZe607HAWNNq1z33XAOfge8&si=_tYFCcoo6IvVup26
+https://music.youtube.com/playlist?list=PLQ176FUIyIUa1dA8101V-V7iesN8CgqfY&si=mASEEwd1HSU9BstM
+https://music.youtube.com/playlist?list=PLQ176FUIyIUYbrYf6v9y6F9wturNQf1Bf&si=Km718XD0DTqCtybL

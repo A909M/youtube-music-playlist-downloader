@@ -1,0 +1,20 @@
+# YouTube Music Downloader Configuration
+# Default configuration file
+
+# Output directory for downloaded files
+output_dir: /downloads
+
+# MP3 audio quality (e.g., 128k, 192k, 320k)
+quality: 320k
+
+# Enable rate limiting to avoid IP blocking (0=disabled, 1=enabled)
+rate_limit: 1
+
+# Maximum number of retries for failed downloads
+max_retries: 3
+
+# Log file path (leave empty for console-only logging)
+log_file: /logs/ytm-downloader.log
+
+# Verbose logging (0=normal, 1=verbose)
+verbose: 0

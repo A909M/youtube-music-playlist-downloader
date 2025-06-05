@@ -1,0 +1,58 @@
+name: Docker Build and Test
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    
+    - name: Lint with flake8
+      run: |
+        pip install flake8
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # exit-zero treats all errors as warnings
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    
+    - name: Test directory structure
+      run: |
+        mkdir -p downloads logs
+        chmod +x setup.sh
+        ./setup.sh
+        ls -la
+      - name: Build Docker image
+      run: docker build -t ytm-downloader .
+      
+    - name: Test Docker image
+      run: |
+        # Test that the Docker image runs correctly
+        docker run --rm ytm-downloader --help
+        
+        # Test with a mock playlist file
+        echo "# Test playlist" > test-playlists.txt
+        docker run --rm -v "$(pwd)/downloads:/downloads" -v "$(pwd)/test-playlists.txt:/app/playlists.txt:ro" ytm-downloader -f /app/playlists.txt || true
+        
+        # Check if the directories were created properly
+        if [ ! -d "downloads" ]; then
+          echo "Downloads directory was not created properly"
+          exit 1
+        fi
+    
+    - name: Test Docker image
+      run: docker run --rm ytm-downloader --help

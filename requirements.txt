@@ -1,0 +1,5 @@
+yt-dlp>=2023.3.4
+ffmpeg-python>=0.2.0
+pyyaml>=6.0
+tqdm>=4.65.0
+requests>=2.31.0
