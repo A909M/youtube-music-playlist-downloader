@@ -186,3 +186,18 @@ The repository includes a GitHub Actions workflow that:
 ## Built With
 
 This project was developed with the assistance of GitHub Copilot, an AI pair programming tool that helps generate code and provide suggestions during development.
+
+## Recommended Playlists
+
+Want to try out the tool? Here are some curated playlists you can download:
+
+| Playlist Name | Description | URL |
+|--------------|-------------|-----|
+| Lo-Fi Beats | Perfect background music for coding or studying | https://music.youtube.com/playlist?list=PLQ176FUIyIUaNcDQJjIFL0wp8GW2EA9Xh |
+| Instrumental Focus | Distraction-free music to boost productivity | https://music.youtube.com/playlist?list=PLQ176FUIyIUZe607HAWNNq1z33XAOfge8 |
+| Ambient Soundscapes | Calm atmospheric music for relaxation | https://music.youtube.com/playlist?list=PLQ176FUIyIUa1dA8101V-V7iesN8CgqfY |
+| Coding Mix | Energetic beats to keep you in the flow | https://music.youtube.com/playlist?list=PLQ176FUIyIUYbrYf6v9y6F9wturNQf1Bf |
+
+Simply copy any of these URLs to your `playlists.txt` file and run the tool to download them.
+
+> **Note**: These are public playlists available on YouTube Music. Please respect copyright laws when downloading music.
