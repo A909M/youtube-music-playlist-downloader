@@ -12,9 +12,17 @@ build/
 venv/
 env/
 ENV/
+.env/
 
 # Downloaded files
 downloads/
+
+# Log files
+logs/
+*.log
+
+# Configuration
+config.local.yml
 
 # IDE files
 .idea/
@@ -26,5 +34,10 @@ downloads/
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
+# Docker
+.docker/
+
+# Temporary files
+*.tmp
+*.bak
+*~

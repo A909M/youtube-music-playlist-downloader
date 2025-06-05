@@ -8,7 +8,7 @@ output_dir: /downloads
 quality: 320k
 
 # Enable rate limiting to avoid IP blocking (0=disabled, 1=enabled)
-rate_limit: 1
+rate_limit: 0
 
 # Maximum number of retries for failed downloads
 max_retries: 3

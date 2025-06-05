@@ -176,6 +176,7 @@ This project is hosted on GitHub and includes CI/CD through GitHub Actions:
 ### GitHub Actions
 
 The repository includes a GitHub Actions workflow that:
+
 - Builds the Docker image
 - Runs linting with flake8
 - Tests the Docker container functionality

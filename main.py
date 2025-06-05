@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """
 Main entry point for the YouTube Music Playlist Downloader.
+
+Copyright (c) 2025 YouTube Music Playlist Downloader Contributors
+Licensed under the MIT License. See LICENSE file for details.
 """
 import os
 import sys

@@ -3,6 +3,9 @@
 YouTube Music Playlist Downloader
 --------------------------------
 Downloads playlists from YouTube Music and converts them to MP3 format.
+
+Copyright (c) 2025 YouTube Music Playlist Downloader Contributors
+Licensed under the MIT License. See LICENSE file for details.
 """
 import os
 import sys
